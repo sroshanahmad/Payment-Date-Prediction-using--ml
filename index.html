@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./style.css">
+   <title>Pay Date Prediction</title>
+</head>
+<body>
+  
+   <!-- Header -->
+   <div id="insert-before">
+
+      <header>
+         <div class="container">
+            <h1>
+               <a href="index.html" class="test"><img src="./images/Group 20399.svg" alt="logo"></a>
+            </h1>
+            <img class="logo" src="./images/logo.svg" alt="company logo">       
+         </div>
+      </header>
+   <!-- Main Content -->
+      <main class="container">
+         <section>
+            <h2>Invoice List</h2>
+         </section>
+         <section id="grid">
+            <!-- Button Section -->
+            <div class="buttons-section">
+               
+               <button class="btn" id="add"><img src="./images/Path 18189.svg" alt=""><span>Add</span></button>
+               <button class="btn btn-disabled" id="edit" disabled><img src="./images/Path 18191.svg" alt="" ><span>Edit</span></button>
+               <button class="btn btn-disabled" id="delete" disabled><img src="./images/Path 18189-1.svg" alt=""><span>Delete</span></button>
+   
+
+                  <input type="search"  placeholder="Search by Invoice Number" name="search" id="search" autocomplete="off"><img id="search-img" src="./images/search-24px (3).svg" alt="">
+           
+            </div>
+            <!-- Data Table -->
+            <div id="data-table">
+               <a class="table-prev"><i class="fas fa-chevron-circle-left fa-3x"></i></a>
+               
+               <ul id="list-section">
+                  <li class="list" id="list-heading">
+                     <div class="list-container">
+                        <div class="customer-name"><input type="checkbox" id="check-all" name="select-all">Customer Name</div>
+                        <div class="customer-id">Customer #</div>
+                        <div class="invoice">Invoice #</div>
+                        <div class="invoice-amount">Invoice Amount</div>
+                        <div class="due-date">Due Date</div>
+                        <div class="ppd">Predicted Payment Date</div>
+                        <div class="notes">Notes</div>
+                     </div>
+                  </li>
+   
+                  <!-- Dummy -->
+                  <div id="append-here">
+                  
+                  </div>
+               </ul>
+               <a class="table-next"><i class="fas fa-chevron-circle-right  fa-3x"></i></a>
+            </div>
+         </section>
+      </main>
+   </div>
+
+   <!-- Footer for page numbers -->
+
+   
+   <script src="./app.js"></script>
+</body>
+</html>
